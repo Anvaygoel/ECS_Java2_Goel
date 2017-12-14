@@ -12,10 +12,10 @@ public class MoreFillInMethods
 
 		System.out.println();
 		System.out.println("Some random numbers, if you please: ");
-		int lo, hi, val1 = r.nextInt(10) , val2 = r.nextInt(10) ;
+		int lo, hi, val1 = 999 , val2 = 999 ;
 		lo = 1;
 		hi = 10;
-		superrand(args);
+		val1 = superrand(lo, hi);
 		System.out.println("First: " + val1 );
 		// superrand();  // this time, put hi first
 		System.out.println("Second: " + val2 );
@@ -25,20 +25,22 @@ public class MoreFillInMethods
 			System.out.println("They were not the same.");
 				Scanner keyboard = new Scanner(System.in);
 		System.out.println();
+		
+		
 		System.out.print("More counting, but this time not by ones: ");
 		// count from 2 to 8 by 2s
 		
 			
-		 stepcount(args);
+		 stepcount(2,8,2);
 		// count from 10 to 2 by 2s
-		stepcount(args);
+		 stepcount(10,2,2);
 			
 		 
 
 		System.out.println();
 		System.out.println("Let's figure a project grade.");
 		int a=4,b=3,c=4,d=5,e=2,f=1, result=71;
-		 project_grade();
+		 //project_grade();
 		System.out.println("434521 -> " + result );
 
 		System.out.println();
@@ -67,13 +69,55 @@ public class MoreFillInMethods
 	
 
 
-	public static void superrand( String[] args )
+
+
+
+
+
+
+
+
+
+
+
+
+
+	private static void stepcount(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	public static int superrand(int a , int b )
 	{
 		{	
 	}
 	// Parameters are:
-		int a = 0;
-		int b = 0;
+		//int a = 0;
+		//int b = 0;
 	{
 		// picks a number between a and b, no matter which is larger
 		int c;
@@ -85,7 +129,7 @@ public class MoreFillInMethods
 		else
 			c = a;	// or c = b; doesn't matter since they're equal
 
-		return ;
+		return c ;
 	}
 
 }
@@ -94,45 +138,53 @@ public class MoreFillInMethods
 
 
 
- 	public static void stepcount( String[] args )
+ 	public static int stepcount(  int first, int last, int step )
  	{
+		
  		
- 	}
+ 	
 	// Parameters are:
-	     int first;
-	     int last;
-	    int step;
+	   
 	
 		// counts from 'first' to 'last' by 'step'
 		// handles forward and backward
 		int x;
-		{
 		
-		
-		
-
 		if ( first < last )
 		{
 			x = first;
 			while ( x <= last )
-			{
-				System.out.print(x + " ");
+			{	
+			System.out.print(x + " ");
 				x = x + step;
 			}
 		}
+			
+			
+		
 		else
 		{
+		
 			x = first;
 			while ( x >= last )
 			{
 				System.out.print(x + " ");
 				x = x - step;
 			}
+			
 		}
 		
-			
+		return x;
 		
-	}
+		}
+				
+		
+
+		
+			
+			
+
+		
 		
 		
 		
@@ -146,16 +198,19 @@ public class MoreFillInMethods
 	public static void project_grade( )
 	{
 		
-	}
+	
 	// Parameters are:
-	     int p1, p2, p3, p4, p5, p6;
+	     int p1 = 0, p2 = 0, p3 = 0, p4 = 0, p5 = 0, p6 = 0;
 	
 		// given six integers representing scores out of five in each of the
 		// six categories for the first six weeks project: tells you your
 		// overall project grade out of 100
 
 		int overall_grade;
-		{
+		
+		
+		
+		
 
 		overall_grade = p1 * 6;    // six points per point for the first category
 		overall_grade = overall_grade + ( p2 * 6 );   // six points per point
@@ -165,9 +220,17 @@ public class MoreFillInMethods
 		overall_grade = overall_grade + ( p6 * 1 );   // one point per point
 		
 		
-		
+		return;
 		
 		}
+		
+			
+		
+		
+
+
+
+		
 		
 		
 
@@ -180,7 +243,7 @@ public class MoreFillInMethods
 
 
 
-	public static void get_name( String[] args )
+	public static void get_name( String MyString )
 	{
 		
 	}
@@ -202,12 +265,12 @@ public class MoreFillInMethods
 
 
 	public static void crash (String[] args) 
-	{
+	
 		
-	}
-	{
+	
+	
 		
-	}
+	
 	// No parameters.
 	{
 		// displays "you win" or "you lose".  You lose 90% of the time.
@@ -227,12 +290,15 @@ public class MoreFillInMethods
 		System.out.print("you " + magic_word);
 
 		
-	}
-	{
+	
+	
 		
+		return;
 		
 	}
-	}
+}
+	
+	
 	
 
 
