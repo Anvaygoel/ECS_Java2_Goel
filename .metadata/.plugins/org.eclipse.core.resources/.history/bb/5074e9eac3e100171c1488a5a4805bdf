@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class FindingPrimes{
+  public static void main(String[] args)
+  {
+	  
+	  
+	  Scanner keyboard = new Scanner(System.in);
+	  System.out.println("We are going to find some primes!");
+	  System.out.println("What range would you like them in?");
+	  System.out.println("(Only positive intergers 2 or greater)");
+	  
+	  System.out.println("Low End");
+	  
+	  int Low = keyboard.nextInt();
+	
+	  System.out.println("High end");
+	  int high = keyboard.nextInt();
+	  
+	  
+	  for (int i=Low; i<=high; i++)
+	  {
+		  
+		  if (isPrime(i))
+		  {
+			  System.out.println(i+" <");
+      
+			  if(isPrime(0))
+			  {
+				  int temp = high%i;
+				  System.out.print(i);
+				  break;
+			  }
+		  }
+		  else
+		  {
+			  
+		  }
+      
+	  }
+    
+  }  
+  
+  public static boolean isPrime(int n){
+    if (n%1==0)
+    return true;
+    else
+    return false;
+  }
+} 

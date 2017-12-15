@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class Calculator 
+{
+	public static void main(String[] args)
+	{
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("This is a calculator!");
+		System.out.println("Insert your calculation as ### operator ###");
+		
+		double num, num1, answer;
+		String opp;
+		
+		
+		
+	}
+		
+		do
+		{	
+			System.out.println(">");
+			Scanner keyboard = new Scanner(System.in);
+		
+			double num , num1, answer;
+			String opp;
+			num = keyboard.nextInt();
+			opp = keyboard.next();
+			num1 = keyboard.nextInt();
+		
+			
+			 
+			
+			if ( opp.equals ("*"))
+			{
+				answer = num * num1;
+			}
+			else if ( opp.equals(("+")))
+			{
+				answer = num + num1;
+			}
+			else if ( opp.equals(("/")))
+			{
+				answer = num / num1;
+			}
+			else if ( opp.equals(("-")))
+			{
+				answer = num - num1;
+			}
+			else
+			{
+				System.out.println("Undifined opperator");
+			}
+			
+		
+		
+		}
+
+		private double num1(boolean equals) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		{
+			
+
+	
+		
+	}
+}
+
+

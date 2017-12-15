@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Calculator 
+{
+	public static void main(String[] args)
+	{
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("This is a calculator!");
+		System.out.println("Insert your calculation as ### operator ###");
+		int num = keyboard.nextInt();
+		System.out.println();
+		
+		
+	}
+		
+		public static void multiply1()
+		{
+			Scanner keyboard = new Scanner(System.in);
+		int num1,opp, num2;
+		System.out.println(">");
+		num1 = keyboard.nextInt();
+		opp = keyboard.nextInt();
+		num2 = keyboard.nextInt();
+		
+		System.out.println( (num1 * num2));
+		
+	}
+
+	private static void multiply() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

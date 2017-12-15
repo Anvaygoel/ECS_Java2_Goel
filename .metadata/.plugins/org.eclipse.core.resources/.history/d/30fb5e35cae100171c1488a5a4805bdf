@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Calculator 
+{
+	public static void main(String[] args)
+	{
+		
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("This is a calculator!");
+		System.out.println("Insert your calculation as ### operator ###");
+		System.out.println(">");
+		double num = keyboard.nextDouble();
+		String opp = keyboard.next();
+		double num1 = keyboard.nextDouble();
+		System.out.println();
+		
+		
+	}
+		
+		public static void multiply()
+		{
+			Scanner keyboard = new Scanner(System.in);
+			int num , num1;
+			String opp; 
+			num = keyboard.nextInt();
+		 opp = keyboard.next();
+		 num1 = keyboard.nextInt();
+		
+		if ( opp.equals ("*"))
+		{
+		 
+		
+		System.out.println( (num * num1));
+		}
+		return;
+		
+		
+		}
+
+	
+		
+}
+
+
