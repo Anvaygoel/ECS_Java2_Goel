@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class HiLowCounter{
 	
 	public static void main(String[] args) {
-		Scanner keyboard = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		Random r = new Random();
 		
@@ -18,7 +18,7 @@ public class HiLowCounter{
 		
 		System.out.println("I am thinking of a number from 1 - 100. Can you guess it?");
 		
-		num = keyboard.nextInt();
+		num = sc.nextInt();
 		
 		System.out.println("Guess #" + tries + ": " + num);
 		
@@ -33,7 +33,7 @@ public class HiLowCounter{
 		while(tries <= 6) {
 			tries++;
 			
-			num = keyboard.nextInt();
+			num = sc.nextInt();
 					
 			System.out.println("Guess #" + tries + ": " + num);
 		

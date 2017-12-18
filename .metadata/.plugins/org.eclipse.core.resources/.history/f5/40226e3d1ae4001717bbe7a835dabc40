@@ -24,30 +24,26 @@ public class Calculator
 			
 			if ( opp.equals("*"))
 			{
-				System.out.println(c = a * b);
+				c = a * b;
 			}
 			else if(opp.equals("+"))
 			{
-				System.out.println(c = a + b);
+				c = a + b;
 				
 			}
 			else if(opp.equals("/"))
 			{
-				System.out.println(c = a / b);
+				c = a / b;
 				
 			}
 			else if(opp.equals("-"))
 			{
-				System.out.println(c = a - b);
+				c = a - b;
 			}
-			else if ( opp.equals("^"))
-			{
-				System.out.println(c = Math.pow(a,b));
-			}		
-
+			else if ( opp)
 			else
-			{	
-				System.out.println("operator undifined: " + opp + " .");
+			{
+				System.out.println("opperator undifined: " + opp + " .");
 			}
 			
 		}while ( a!=0);

@@ -28,7 +28,7 @@ numG = keyboard.nextInt();
 }
 
 	System.out.println("That’s correct! You’re a good guesser.");
-System.out.println("It took you "+ counter + " Tries.");
+System.out.println("It took you "+ counter + " Tries .");
 
 }
 }

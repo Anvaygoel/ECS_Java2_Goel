@@ -16,11 +16,11 @@ public class HiLow
 		
 		if ( num1 < HILOW)
 		{
-			System.out.println(" Sorry you are too low. I was thinking of " +  HILOW + "");
+			System.out.println(" Sorry you are too low. I was thinking of " +  r.nextInt(100) + "");
 		}
 		if ( num1 > HILOW)
 		{
-			System.out.println("Sorry, you are too high1. I was thinking of " +  HILOW + "");
+			System.out.println("Sorry, you are too high1. I was thinking of " +  r.nextInt(100) + "");
 		}
 		if ( HILOW == num1)
 		{
